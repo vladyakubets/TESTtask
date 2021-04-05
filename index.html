@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Repos</title>
+
+    <!-- Import the Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+<table id="savedRepos" class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">URL</th>
+<!--        <th scope="col">add to favorites</th>-->
+    </tr>
+    </thead>
+    <tbody id="savedTable">
+
+    </tbody>
+</table>
+
+<h3 class="text-center mt-5"></h3>
+<form id="gitHubForm" class="form-inline mx-auto" style="width: 300px">
+    <input id="repoNameInput" class="form-control mb-5" type="text" name="repoName" placeholder="GitHub Repo Name">
+    <input type="submit" class="btn btn-primary ml-2 mb-5" value="Submit">
+</form>
+<ul  class="list-group mx-auto mb-5" style="width: 500px">
+
+</ul>
+<table id="userRepos" class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">URL</th>
+        <th scope="col">add to favorites</th>
+    </tr>
+    </thead>
+    <tbody id="resultTable">
+
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
